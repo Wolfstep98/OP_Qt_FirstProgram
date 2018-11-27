@@ -1,12 +1,28 @@
+//---Main---
 #include <QApplication>
-#include <QPushButton>
-#include <QWidget>
-#include <QFont>
-#include <QIcon>
 #include <Qt>
 #include <QLocale>
 #include <QTranslator>
 #include <QLibraryInfo>
+
+//---Widgets---
+#include <QWidget>
+//Buttons
+#include <QPushButton>
+//Font
+#include <QFont>
+//Icons
+#include <QIcon>
+//LineEdit
+#include <QLineEdit>
+
+//---Layouts---
+#include <QHBoxLayout>
+#include <QVBoxLayout>
+#include <QGridLayout>
+#include <QFormLayout>
+
+//Custom
 #include "mywindow.h"
 
 int main(int argc, char *argv[])
@@ -19,8 +35,8 @@ int main(int argc, char *argv[])
     //app.installTranslator(&translator);
 
     //MyWindow
-    MyWindow window;
-    window.show();
+    //MyWindow window;
+    //window.show();
 
     //Window
     /*
@@ -66,6 +82,47 @@ int main(int argc, char *argv[])
     //Show the button on the window.
     button.show();
 */
+
+    //Positioning
+    /*
+    //QWidget window;
+    //QHBoxLayout *layout = new QHBoxLayout();
+    //QGridLayout *gridLayout = new QGridLayout();
+
+    //QPushButton *button1 = new QPushButton("Bonjour");
+    //QPushButton *button2 = new QPushButton("les");
+    //QPushButton *button3 = new QPushButton("pd");
+
+    //gridLayout->addWidget(button1,0,0);
+    //gridLayout->addWidget(button2,0,1);
+    //gridLayout->addWidget(button3,1,0,1,2);
+
+    //window.setLayout(gridLayout);
+    //QPushButton bouton("Bonjour Lylouf", &fenetre);
+    //bouton.move(70, 60);
+    //QFormLayout *layoutForm = new QFormLayout();
+
+    //QLineEdit *lineFirstName = new QLineEdit();
+    //QLineEdit *lineLastName = new QLineEdit();
+    //QLineEdit *lineAge = new QLineEdit();
+
+    //layoutForm->addRow("&First Name :", lineFirstName);
+    //layoutForm->addRow("&Last Name :", lineLastName);
+    //layoutForm->addRow("&Age :", lineAge);
+
+    //QVBoxLayout *mainLayout = new QVBoxLayout();
+    //mainLayout->addLayout(layoutForm);
+
+    //QPushButton *buttonQuit = new QPushButton("Quitter");
+    //QWidget::connect(buttonQuit, SIGNAL(clicked()), &app, SLOT(quit()));
+    //mainLayout->addWidget(buttonQuit); // Ajout du bouton
+
+    //window.setLayout(mainLayout);
+    window.show();
+    */
+
+    //Widgets
+
 
     //Run the app.
     return app.exec();
